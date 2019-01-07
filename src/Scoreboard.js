@@ -5,7 +5,10 @@ export default class Scoreboard extends Component{
   render(){
     return(
       <div className="ScoreBoard">
-        <div className='Icon'>{this.props.player1Icon}</div>
+        <div className='Icon1Cont'>
+          <h4 className='P1Icon'>Player 1 Icon</h4>
+          <div className='Icon'>{this.props.player1Icon}</div>
+        </div>
         <div>
           <h2>Score</h2>
             <table>
@@ -21,7 +24,10 @@ export default class Scoreboard extends Component{
               </tbody>
             </table>
           </div>
-          <div className='Icon'>{this.props.player2Icon}</div>
+          <div className='Icon2Cont'>
+            <h4 className='P2Icon'>Player 2 Icon</h4>
+            <div className='Icon'>{this.props.player2Icon}</div>
+          </div>
       </div>
     )
   }
